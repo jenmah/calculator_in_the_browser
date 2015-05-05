@@ -8,13 +8,15 @@ var getNumber = document.getElementsByClassName("number");
 
 for(var i=0; i<getNumber.length; i++) {
   getNumber[i].addEventListener('click', function(event) {
-  console.log(this.value);
-  firstNumber = parseInt(this.value);
+    if (firstNumber === '') {
+      console.log(this.value);
+      firstNumber = parseInt(this.value);
+    } else {
+      console.log(this.value);
+      secondNumber = parseInt(this.value);
+    }
   });
 }
-
-console.log(firstNumber);
-
 
 
 var getOperator = document.getElementsByClassName("operator");
@@ -25,9 +27,6 @@ for(var i=0; i<getOperator.length; i++) {
   operator = this.value;
   });
 }
-
-
-
 
 
 
