@@ -33,11 +33,20 @@ for(var i=0; i<getOperator.length; i++) {
 var equalsButton = document.getElementsByClassName("eq");
 
 equalsButton[0].addEventListener('click', function(event) {
+  if (operator === '+') {
   console.log(firstNumber + secondNumber);
   finalAnswer = firstNumber + secondNumber;
+  } else if (operator === '-') {
+  console.log(firstNumber - secondNumber);
+  finalAnswer = firstNumber - secondNumber;
+  } else if (operator === '/') {
+  console.log(firstNumber / secondNumber);
+  finalAnswer = firstNumber / secondNumber;
+  } else if (operator === 'x') {
+  console.log(firstNumber * secondNumber);
+  finalAnswer = firstNumber * secondNumber;
+  }
 });
-
-
 
 
 
