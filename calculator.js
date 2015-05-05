@@ -1,10 +1,9 @@
 var firstNumber = '';
 var operator = '';
 
-var getNumber = document.getElementsByClassName("number");
-    
-// getNumber[0].addEventListener('click', function(event) {
 
+// Store the user's first and second input numbers
+var getNumber = document.getElementsByClassName("number");
 
 for(var i=0; i<getNumber.length; i++) {
   getNumber[i].addEventListener('click', function(event) {
@@ -19,6 +18,7 @@ for(var i=0; i<getNumber.length; i++) {
 }
 
 
+// Store user's operator
 var getOperator = document.getElementsByClassName("operator");
 
 for(var i=0; i<getOperator.length; i++) {
@@ -29,15 +29,19 @@ for(var i=0; i<getOperator.length; i++) {
 }
 
 
+// Run a function when the user clicks equals
+var equalsButton = document.getElementsByClassName("eq");
+
+equalsButton[0].addEventListener('click', function(event) {
+  console.log(firstNumber + secondNumber);
+  finalAnswer = firstNumber + secondNumber;
+});
 
 
 
 
 
 
-// getNumber.addEventListener('click', function(event) {
-//   alert("this isn't working!");
-// });
 
 
 
@@ -45,16 +49,36 @@ for(var i=0; i<getOperator.length; i++) {
 
 
 
-// var eventClickButton = document.getElementById('event_click');
 
-// eventClickButton.addEventListener('click', function(){
-//    alert('I have been clicked!');
-// });
+// Mathematical Functions
+
+// var subtract = function(usernum1, usernum2) {
+//   console.log(usernum1 - usernum2);
+//   return usernum1 - usernum2;
+// };
+
+// var multiply = function(usernum1, usernum2) {
+//   console.log(usernum1 * usernum2);
+//   return usernum1 * usernum2;
+// };
+
+// var divide = function(usernum1, usernum2) {
+//   console.log(usernum1 / usernum2);
+//   return usernum1 / usernum2;
+// };
+
+// var add = function(usernum1, usernum2) {
+//   console.log(usernum1 + usernum2);
+//   return usernum1 + usernum2;
+// };
 
 
 
 
-// #5
+
+
+
+
 
 // - Listen for the `click` event on the `<ul>` element.
 // - Use `event.target` to see which `<li>` was clicked.
@@ -69,34 +93,3 @@ for(var i=0; i<getOperator.length; i++) {
 // vegetables.addEventListener('click', function(event) {
 //   alert(event.target.firstChild.nodeValue);
 // });
-
-//______________
-
-// #3
-
-// var former = document.getElementById('former');
-
-// former.addEventListener('submit', function(event) {
-//   event.preventDefault();
-//   alert(this.children[0].value);
-// });
-
-
-// - Listen for the `submit` event on the `<form>`.
-// - `alert()` the text that is typed into the text field.
-
-
-
-
-
-
-
-// Instructions
-
-// Create a calculator that takes input from the browser and can do the basic arithmetic operations.
-
-// Tasks
-
-// Must be able to +, -, / and *
-// Must update a display
-// Must be able to clear the display
