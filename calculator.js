@@ -50,55 +50,11 @@ equalsButton[0].addEventListener('click', function(event) {
 
 
 
+// Make the answer appear on the display
+// var display = document.getElementsByClassName('display');
 
-
-
-
-
-
-
-
-
-// Mathematical Functions
-
-// var subtract = function(usernum1, usernum2) {
-//   console.log(usernum1 - usernum2);
-//   return usernum1 - usernum2;
-// };
-
-// var multiply = function(usernum1, usernum2) {
-//   console.log(usernum1 * usernum2);
-//   return usernum1 * usernum2;
-// };
-
-// var divide = function(usernum1, usernum2) {
-//   console.log(usernum1 / usernum2);
-//   return usernum1 / usernum2;
-// };
-
-// var add = function(usernum1, usernum2) {
-//   console.log(usernum1 + usernum2);
-//   return usernum1 + usernum2;
-// };
-
-
-
-
-
-
-
-
-
-// - Listen for the `click` event on the `<ul>` element.
-// - Use `event.target` to see which `<li>` was clicked.
-//     - `alert()` the specific vegetable that was selected.
-// - Make sure you only use one event listener instead of adding an event
-//   handler to each `<li>`.
-
-
-// ## Part 5 Answer
-// var vegetables= document.getElementById('vegetables');
-
-// vegetables.addEventListener('click', function(event) {
-//   alert(event.target.firstChild.nodeValue);
+// display.addEventListener('submit', function(event) {
+//   alert(finalAnswer);
 // });
+
+
